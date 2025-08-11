@@ -1,6 +1,6 @@
-import sys
+# import sys
 
-
+# Function to get input and convert to float
 def get_float(prompt):
     while True:
         try:
@@ -9,8 +9,9 @@ def get_float(prompt):
             print("Not a valid number!")
 
 
+# Actual Math for conversion
 def calculate_discounted_price(amount, discount):
-    return round(amount * (1 - discount / 100), 2)
+    return round(amount * (1 - discount / 100), 2) #Returns the rounded amount
 
 def main():
     amount = get_float("Enter the amount: $")
@@ -20,6 +21,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
-
-
